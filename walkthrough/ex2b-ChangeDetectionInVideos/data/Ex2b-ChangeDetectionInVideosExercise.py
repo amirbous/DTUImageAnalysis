@@ -22,7 +22,9 @@ def capture_from_camera_and_show_images():
     use_droid_cam = False
     if use_droid_cam:
         url = "http://192.168.1.120:4747/video"
+
     cap = cv2.VideoCapture(url)
+
     # cap = cv2.VideoCapture(0)
     if not cap.isOpened():
         print("Cannot open camera")
